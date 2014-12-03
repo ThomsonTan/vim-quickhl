@@ -22,7 +22,6 @@ set cpo&vim
 " GlobalVar: {{{
 if !exists("g:quickhl_manual_colors")
   let g:quickhl_manual_colors = [
-        \ "gui=None ctermfg=16  ctermbg=153 guifg=black guibg=#ffff00",
         \ "gui=None ctermfg=7   ctermbg=1   guibg=#00ff00 guifg=black",
         \ "gui=None ctermfg=7   ctermbg=2   guibg=#ff0000 guifg=#ffffff",
         \ "gui=None ctermfg=7   ctermbg=3   guibg=#007fff guifg=#ffffff",
@@ -35,6 +34,7 @@ if !exists("g:quickhl_manual_colors")
         \ "gui=None ctermfg=7   ctermbg=16  guibg=#008040 guifg=#ffffff",
         \ "gui=None ctermfg=7   ctermbg=50  guibg=#90ffa8 guifg=black",
         \ "gui=None ctermfg=7   ctermbg=56  guibg=#0000ff guifg=#ffffff",
+        \ "gui=None ctermfg=16  ctermbg=153 guifg=black guibg=#ffff00",
         \ ]
 endif
 
