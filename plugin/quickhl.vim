@@ -37,6 +37,7 @@ if !exists("g:quickhl_manual_colors")
 endif
 
 let s:default_settings = {
+      \ "g:quickhl_hl_keyword": 0,
       \ "g:quickhl_manual_enable_at_startup": 0,
       \ "g:quickhl_manual_keywords": [],
       \ "g:quickhl_manual_hl_priority": 10,
