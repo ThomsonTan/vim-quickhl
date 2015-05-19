@@ -18,7 +18,11 @@ endfunction "}}}
 
 let s:metachar = '\/~ .*^[''$'
 function! quickhl#escape(pattern) "{{{
-  return escape(a:pattern, s:metachar)
+  if g:quickhl_hl_keyword == 1
+    return '\<'.escape(a:pattern, s:metachar).'\>'
+  else
+    return escape(a:pattern, s:metachar)
+  endif
 endfunction "}}}
 
 function! quickhl#our_match(pattern) "{{{
