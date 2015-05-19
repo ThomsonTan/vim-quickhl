@@ -16,7 +16,10 @@ function! s:tag.set() "{{{
   let taglist = taglist('.*')
   call filter(taglist, 'len(v:val.name) >= g:quickhl_tag_minimum_identifier')
   for tag in taglist
-     call matchadd(self.name, tag.name, g:quickhl_tag_hl_priority)
+     " tag should be an keyword
+     let tagKeyword = '\<'.tag.name.'\>'
+     call matchadd(self.name, tagKeyword, g:quickhl_tag_hl_priority)
+ority)
   endfor
 endfunction "}}}
 
